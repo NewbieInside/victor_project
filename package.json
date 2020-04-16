@@ -1,0 +1,33 @@
+{
+  "name": "victor_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "victor_project": "server.js"
+  },
+  "scripts": {
+    "start": "npx nodemon ./bin/server.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewbieInside/victor_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewbieInside/victor_project/issues"
+  },
+  "homepage": "https://github.com/NewbieInside/victor_project#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "read-excel-file": "^4.0.6"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  }
+}
