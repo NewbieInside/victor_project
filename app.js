@@ -1,7 +1,8 @@
 const express = require('express');
+const createError = require('http-errors');
 const path = require('path');
 const logger = require('morgan');
-
+const indexRouter = require('./routes/index');
 
 
 const app = express();
@@ -20,9 +21,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+<<<<<<< HEAD
 app.get('/', (req, res) => {
   res.render('index');
 })
+=======
+app.use('/', indexRouter);
+>>>>>>> 497a1038611b7c9aa7165f940ac319335ef79fec
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

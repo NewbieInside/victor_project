@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, auto);
+  border: 1px solid green;
+  padding: 10px;
+  width: 100vw;
+  height: auto;
+}
+
+.card {
+  align-items: center;
+  margin-top: 4rem;
+  width: 70%;
+  max-width: 200px;
+  border: 1px solid #a9a9a9;
+  border-radius: 3px;
+  position: relative;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hashtag {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 1px solid grey;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.social>a {
+  margin-left: .50rem;
+  margin-right: .50rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+  height: 50%;
+  width: 100%;
+  line-height: 1.4;
+}
+
+.profile > span > p {
+  color: grey;
+  font-size: 1rem;
+}
+
+.card-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-row-gap: 50px;
+  justify-items: center;
+  width: 80%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.search {
+  display: grid;
+  justify-items: center;
+  width: 80%;
+  height: 50%;
+}
+
+input {
+  margin: 20px 0;
+  width: 70%;
+  height: 3rem;
+  border-radius: 3px;
+  border: 0;
+  padding: 0 1rem;
+  background-color: #a9a9a9;
+}
+
+input[type='text'] {
+  color: #778899;
+  font-size: 1rem;
+}
+
+hr {
+  height: 2px;
+  background-color: #778899;
+  border: none;
+  width: 70%;
+}
+
+@media (min-width: 2001px){
+  .card-container {
+    grid-template-columns: repeat(5, auto);
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 2000px) {
+  .card-container {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+
+@media (max-width: 500px) {
+  .card-container {
+    grid-template-columns: repeat(1, auto);
+  }
+}
