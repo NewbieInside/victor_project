@@ -24,6 +24,10 @@
   "dependencies": {
     "debug": "^4.1.1",
     "express": "^4.17.1",
+    "firebase-admin": "^8.10.0",
+    "hbs": "^4.1.1",
+    "http-errors": "^1.7.3",
+    "node-fetch": "^2.6.0",
     "read-excel-file": "^4.0.6"
   },
   "devDependencies": {
