@@ -23,7 +23,7 @@
   "homepage": "https://github.com/NewbieInside/victor_project#readme",
   "dependencies": {
     "debug": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "firebase-admin": "^8.10.0",
     "hbs": "^4.1.1",
     "http-errors": "^1.7.3",
